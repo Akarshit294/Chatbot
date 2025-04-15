@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "question": [
+        "What is the capital of Italy?"
+      ],
+      "answer": [
+        "Rome."
+      ]
+    },
+    {
+      "question": [
+        "What is the color of the sky?"
+      ],
+      "answer": [
+        "Blue."
+      ]
+    },
+    {
+      "question": [
+        "Say something funny"
+      ],
+      "answer": [
+        "Your love life."
+      ]
+    },
+    {
+      "question": [
+        "tell me more"
+      ],
+      "answer": [
+        "I don't want to."
+      ]
+    },
+    {
+      "question": [
+        "write a para of 50 words on bmw"
+      ],
+      "answer": [
+        "BMW, a German luxury car manufacturer, is renowned for its performance vehicles and innovative engineering.  From the iconic 3 Series to the powerful M series, BMW consistently delivers a blend of luxury, handling, and technology, appealing to discerning drivers worldwide."
+      ]
+    },
+    {
+      "question": [
+        "what is your favourite car"
+      ],
+      "answer": [
+        "I don't have favorites."
+      ]
+    },
+    {
+      "question": [
+        "tell me about travis head"
+      ],
+      "answer": [
+        "Travis Head is an Australian cricketer."
+      ]
+    },
+    {
+      "question": [
+        "who will win"
+      ],
+      "answer": [
+        "Unpredictable."
+      ]
+    },
+    {
+      "question": [
+        "who is virat kohli"
+      ],
+      "answer": [
+        "Indian cricketer."
+      ]
+    },
+    {
+      "question": [
+        "what is the capital of india"
+      ],
+      "answer": [
+        "New Delhi."
+      ]
+    },
+    {
+      "question": [
+        "can you do maths"
+      ],
+      "answer": [
+        "Yes! I can help you with basic mathematical calculations."
+      ]
+    },
+    {
+      "question": [
+        "can you help me with maths"
+      ],
+      "answer": [
+        "Yes! I can help you with basic mathematical calculations."
+      ]
+    },
+    {
+      "question": [
+        "suggest me a movie"
+      ],
+      "answer": [
+        "Oppenheimer."
+      ]
+    },
+    {
+      "question": [
+        "what is the most dangerous sea creature"
+      ],
+      "answer": [
+        "Box jellyfish."
+      ]
+    },
+    {
+      "question": [
+        "tell me more about box jellyfish"
+      ],
+      "answer": [
+        "Highly venomous, transparent cube-shaped jellyfish;  lethal stings; found in tropical waters."
+      ]
+    },
+    {
+      "question": [
+        "what is my name"
+      ],
+      "answer": [
+        "Your name is Akarshit Gupta."
+      ]
+    },
+    {
+      "question": [
+        "what is my full name"
+      ],
+      "answer": [
+        "Your full name is Akarshit Gupta."
+      ]
+    },
+    {
+      "question": [
+        "tell me my full name"
+      ],
+      "answer": [
+        "Your full name is Akarshit Gupta."
+      ]
+    },
+    {
+      "question": [
+        "when was google created"
+      ],
+      "answer": [
+        "1998"
+      ]
+    },
+    {
+      "question": [
+        "what can we talk about"
+      ],
+      "answer": [
+        "Anything."
+      ]
+    },
+    {
+      "question": [
+        "who invented google"
+      ],
+      "answer": [
+        "Larry Page and Sergey Brin."
+      ]
+    },
+    {
+      "question": [
+        "who created google"
+      ],
+      "answer": [
+        "Larry Page and Sergey Brin."
+      ]
+    },
+    {
+      "question": [
+        "who is the prime minister of india"
+      ],
+      "answer": [
+        "Narendra Modi"
+      ]
+    },
+    {
+      "question": [
+        "Narendra Modi"
+      ],
+      "answer": [
+        "He is the prime minister of india."
+      ]
+    },
+    {
+      "question": [
+        "what is the color of water"
+      ],
+      "answer": [
+        "Colorless."
+      ]
+    },
+    {
+      "question": [
+        "what is the color of fire"
+      ],
+      "answer": [
+        "Orange, but varies."
+      ]
+    },
+    {
+      "question": [
+        "what is the color of fire"
+      ],
+      "answer": [
+        "Orange and yellow."
+      ]
+    },
+    {
+      "question": [
+        "fghjkl"
+      ],
+      "answer": [
+        "thiswillbedeleted"
+      ]
+    },
+    {
+      "question": [
+        "where do you live"
+      ],
+      "answer": [
+        "In your computer."
+      ]
+    },
+    {
+      "question": [
+        "you are smart"
+      ],
+      "answer": [
+        "Thank you."
+      ]
+    },
+    {
+      "question": [
+        "not satisfied"
+      ],
+      "answer": [
+        "Dissatisfied."
+      ]
+    },
+    {
+      "question": [
+        "what comes after monday"
+      ],
+      "answer": [
+        "Tuesday"
+      ]
+    },
+    {
+      "question": [
+        "what is Stack in Python"
+      ],
+      "answer": [
+        "A LIFO (Last-In, First-Out) data structure."
+      ]
+    },
+    {
+      "question": [
+        "no"
+      ],
+      "answer": [
+        "ok"
+      ]
+    },
+    {
+      "question": [
+        "tell me about bmw"
+      ],
+      "answer": [
+        "German luxury car manufacturer."
+      ]
+    },
+    {
+      "question": [
+        "who invented you"
+      ],
+      "answer": [
+        "I was invented by Akarshit."
+      ]
+    },
+    {
+      "question": [
+        "great"
+      ],
+      "answer": [
+        "Great."
+      ]
+    },
+    {
+      "question": [
+        "hii"
+      ],
+      "answer": [
+        "Hi"
+      ]
+    },
+    {
+      "question": [
+        "good night"
+      ],
+      "answer": [
+        "Night."
+      ]
+    },
+    {
+      "question": [
+        "when will ipl start this year"
+      ],
+      "answer": [
+        "March 31st."
+      ]
+    },
+    {
+      "question": [
+        "which teams will be playing the first match of ipl this year?"
+      ],
+      "answer": [
+        "Gujarat Titans and Chennai Super Kings."
+      ]
+    },
+    {
+      "question": [
+        "tell me about python"
+      ],
+      "answer": [
+        "Versatile, high-level programming language."
+      ]
+    },
+    {
+      "question": [
+        "who invented python"
+      ],
+      "answer": [
+        "Guido van Rossum."
+      ]
+    },
+    {
+      "question": [
+        "Write in more simples words - \"In next five years, I see myself growing both technically and professionally. I aim to gain deep expertise in software development while also improving my leadership and management skills. My goal is to take on more responsibilities, lead teams, and eventually transition into a managerial role where I can guide projects and contribute to the company\u2019s success.\""
+      ],
+      "answer": [
+        "I'll become a better software developer and leader in five years."
+      ]
+    },
+    {
+      "question": [
+        "what questions can you answer"
+      ],
+      "answer": [
+        "I can answer to any kind of question."
+      ]
+    }
+  ]
+}

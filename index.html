@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery cdn link -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+
+        body{
+            /* background-color: rgb(201, 145, 145); */
+            font-family: monospace;
+            /* text-align: center; */
+            margin-left: 50px;
+            margin-right: 50px;
+            font-size: large;
+
+            /* background-image: url('bg1.jpeg'); Change this to your image path */
+            /* background-size: cover; */
+            /* background-position: center; */
+            /* background-repeat: no-repeat; */
+            /* height: 100vh; Full screen height */
+            /* display: flex; */
+            /* flex-direction: column; */
+        }
+
+        #bg-img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw; /* Fit to screen width */
+            height: 100vh; /* Fit to screen height */
+            object-fit: cover; /* Crops the image to fit the screen */
+            z-index: -1; /* Keep it in the background */
+        }
+
+        #chatBox{
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            margin-top: 50px;
+            /* text-align: center; */
+        }
+
+        .botText{
+            /* font-family: monospace; */
+            font-size: 16px;
+            text-align: left;
+            line-height: 25px;
+            /* color: rgb(57, 190, 57); */
+            color: #4CAF50;
+            /* margin-left: 400px; */
+            /* display: inline-block; */
+            /* max-width: 70%; */
+            /* word-wrap: break-word; */
+        }
+
+        #userInput{
+            font-family: monospace;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            text-align: center;
+            margin-top: 50px;
+            /* word-wrap: break-word; */
+            /* display: inline-block; */
+        }
+
+        #textInput{
+            border: 3px solid transparent;
+            border-bottom: 3px dotted #657865;
+            /* font-family: monospace; */
+            text-align: center;
+            font-size: 16px;
+            width: 60%;
+            padding: 15px;
+            color: rgb(48, 48, 189);
+            background-color: transparent;
+        }
+
+        #buttonInput{
+            padding: 5px;
+            /* font-family: monospace; */
+            font-size: 16px;
+            padding: 10px;
+            border: 3px solid rgb(8, 164, 8);
+            background-color: rgb(57, 190, 57);
+            border-radius: 10px;
+        }
+
+        h1{
+            text-align: center;
+            color: rgb(57, 190, 57);
+            font-size: 40px;
+            /* font-family: 'Arial'; */
+        }
+
+        .userText{
+            text-align: right;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    
+    <!-- <img id="bg-img" src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Background"> -->
+    <!-- <img id="bg-img" src="https://img.freepik.com/free-vector/shiny-white-gray-background-with-wavy-lines_1017-25101.jpg?t=st=1741850694~exp=1741854294~hmac=60803fcb9f059c7788d83e265feaf35d7dcfbda1558385cb8931b28c4987f00b&w=2000" alt="Background"> -->
+    <img id="bg-img" src="https://img.freepik.com/free-vector/white-background-paper-style_23-2149000678.jpg?t=st=1741851232~exp=1741854832~hmac=4f081a765c518fc0464b1aaae10d2b2704b1398e772504ae68a54dc3696ab529&w=2000" alt="Background">
+
+    <h1>ChatBot</h1>
+    <div>
+        <div id="chatBox">
+            <p class="botText"><span>Chatbot: Hey! Ready to assist you.</span></p>
+        </div>
+        <div id="userInput">
+            <!-- <input type="text" id="textInput" name="userMessage" placeholder="Type your message..."/> -->
+            <input type="text" id="textInput" name="userMessage" value="Type your message..." 
+            onfocus="if(this.value=='Type your message...') this.value='';" 
+            onblur="if(this.value=='') this.value='Type your message...';" />
+            <input type="submit" id="buttonInput" value="Send"/>
+        </div>
+    </div>
+
+    <script>
+        function getUserResponse(){
+            var userText = $('#textInput').val();
+            // userText = "User: " + userText;
+            // this var will contain user input.
+            var userHtml = "<p class='userText'><span>"+"User: "+userText+"</span></p>";
+            // this var will display what user just sent.
+            $('#textInput').val("");
+            // this will empty the userInput box
+            $('#chatBox').append(userHtml);
+            
+            document.getElementById("userInput").scrollIntoView({block:'start', behavior:'smooth'});
+            // this will scroll the page after user inputs text.
+            $.get("/get",{userMessage: userText}).done(function(data){
+                var botHtml = "<p class='botText'><span>"+data+"</span></p>"
+                $('#chatBox').append(botHtml);
+            });
+
+            // if (userText === "bye") {
+            if ((userText === "bye") || (userText === "exit") || (userText === "quit") || (userText === "good bye")) {
+                setTimeout(function() {
+                location.reload(); // Refresh the page
+            }, 1500); // 1.5-second delay before refresh
+            return;
+    }
+        }
+
+        $('#textInput').keypress(function(e){
+            if(e.which == 13){
+                getUserResponse();
+                // this will call getuserresponse function when user hit enter.
+            }
+        })
+
+        $('#buttonInput').click(function(){
+            getUserResponse();
+            // this will call getuserresponse function when user hit send button.
+        })
+
+    </script>
+
+</body>
+</html>
