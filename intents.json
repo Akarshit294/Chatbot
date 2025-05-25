@@ -427,6 +427,16 @@
       "Larry Page and Sergey Brin."
    ],
    "context_set": ""
+},
+ {
+   "tag": "elon",
+   "patterns": [
+      "who is elon musk"
+   ],
+   "responses": [
+      "Elon Musk is the CEO of Tesla and SpaceX."
+   ],
+   "context_set": ""
 }
 ]
 }
