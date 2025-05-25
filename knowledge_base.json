@@ -359,6 +359,62 @@
       "answer": [
         "I can answer to any kind of question."
       ]
+    },
+    {
+      "question": [
+        "Tell me about Tesla"
+      ],
+      "answer": [
+        "Electric vehicles, clean energy."
+      ]
+    },
+    {
+      "question": [
+        "Who is Elon Musk"
+      ],
+      "answer": [
+        "Elon Musk is the CEO of Tesla and SpaceX."
+      ]
+    },
+    {
+      "question": [
+        "how many states are in india"
+      ],
+      "answer": [
+        "28"
+      ]
+    },
+    {
+      "question": [
+        "name all states in india"
+      ],
+      "answer": [
+        "Andhra Pradesh, Arunachal Pradesh, Assam, Bihar, Chhattisgarh, Goa, Gujarat, Haryana, Himachal Pradesh, Jharkhand, Karnataka, Kerala, Madhya Pradesh, Maharashtra, Manipur, Meghalaya, Mizoram, Nagaland, Odisha, Punjab, Rajasthan, Sikkim, Tamil Nadu, Telangana, Tripura, Uttarakhand, Uttar Pradesh, West Bengal."
+      ]
+    },
+    {
+      "question": [
+        "when is my birthday"
+      ],
+      "answer": [
+        "29th April."
+      ]
+    },
+    {
+      "question": [
+        "Nice"
+      ],
+      "answer": [
+        "Sweet."
+      ]
+    },
+    {
+      "question": [
+        "how far is the sun from earth"
+      ],
+      "answer": [
+        "93 million miles."
+      ]
     }
   ]
 }
