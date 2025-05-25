@@ -1,4 +1,4 @@
-#ChatBot
+# ChatBot
 A Personal Chatbot using Python, Flask, Gemini-Api, HTML, CSS, JQuery
 
 • Implemented a Chatbot using Flask in Python, trained with datasets from ChatterBot and Kaggle, ensuring a broad understanding of user queries.
