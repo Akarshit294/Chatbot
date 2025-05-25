@@ -11,30 +11,20 @@
     <style>
 
         body{
-            /* background-color: rgb(201, 145, 145); */
             font-family: monospace;
-            /* text-align: center; */
             margin-left: 50px;
             margin-right: 50px;
             font-size: large;
-
-            /* background-image: url('bg1.jpeg'); Change this to your image path */
-            /* background-size: cover; */
-            /* background-position: center; */
-            /* background-repeat: no-repeat; */
-            /* height: 100vh; Full screen height */
-            /* display: flex; */
-            /* flex-direction: column; */
         }
 
         #bg-img {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100vw; /* Fit to screen width */
-            height: 100vh; /* Fit to screen height */
-            object-fit: cover; /* Crops the image to fit the screen */
-            z-index: -1; /* Keep it in the background */
+            width: 100vw; 
+            height: 100vh; 
+            object-fit: cover; 
+            z-index: -1; 
         }
 
         #chatBox{
@@ -42,20 +32,13 @@
             margin-right: auto;
             width: 80%;
             margin-top: 50px;
-            /* text-align: center; */
         }
 
         .botText{
-            /* font-family: monospace; */
             font-size: 16px;
             text-align: left;
             line-height: 25px;
-            /* color: rgb(57, 190, 57); */
             color: #4CAF50;
-            /* margin-left: 400px; */
-            /* display: inline-block; */
-            /* max-width: 70%; */
-            /* word-wrap: break-word; */
         }
 
         #userInput{
@@ -65,14 +48,11 @@
             width: 70%;
             text-align: center;
             margin-top: 50px;
-            /* word-wrap: break-word; */
-            /* display: inline-block; */
         }
 
         #textInput{
             border: 3px solid transparent;
             border-bottom: 3px dotted #657865;
-            /* font-family: monospace; */
             text-align: center;
             font-size: 16px;
             width: 60%;
@@ -83,7 +63,6 @@
 
         #buttonInput{
             padding: 5px;
-            /* font-family: monospace; */
             font-size: 16px;
             padding: 10px;
             border: 3px solid rgb(8, 164, 8);
@@ -95,7 +74,6 @@
             text-align: center;
             color: rgb(57, 190, 57);
             font-size: 40px;
-            /* font-family: 'Arial'; */
         }
 
         .userText{
@@ -106,10 +84,6 @@
 
 </head>
 <body>
-    
-    
-    <!-- <img id="bg-img" src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Background"> -->
-    <!-- <img id="bg-img" src="https://img.freepik.com/free-vector/shiny-white-gray-background-with-wavy-lines_1017-25101.jpg?t=st=1741850694~exp=1741854294~hmac=60803fcb9f059c7788d83e265feaf35d7dcfbda1558385cb8931b28c4987f00b&w=2000" alt="Background"> -->
     <img id="bg-img" src="https://img.freepik.com/free-vector/white-background-paper-style_23-2149000678.jpg?t=st=1741851232~exp=1741854832~hmac=4f081a765c518fc0464b1aaae10d2b2704b1398e772504ae68a54dc3696ab529&w=2000" alt="Background">
 
     <h1>ChatBot</h1>
@@ -118,7 +92,6 @@
             <p class="botText"><span>Chatbot: Hey! Ready to assist you.</span></p>
         </div>
         <div id="userInput">
-            <!-- <input type="text" id="textInput" name="userMessage" placeholder="Type your message..."/> -->
             <input type="text" id="textInput" name="userMessage" value="Type your message..." 
             onfocus="if(this.value=='Type your message...') this.value='';" 
             onblur="if(this.value=='') this.value='Type your message...';" />
