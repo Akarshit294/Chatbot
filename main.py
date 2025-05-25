@@ -18,7 +18,7 @@ for intent in data["intents"]:
             conversation_data.append(response)  # Answer
 
 # ------------------------ GEMINI API INTEGRATION ------------------------
-genai.configure(api_key="YOUR_GOOGLE_BARD_API_KEY")
+genai.configure(api_key="PASTE_YOUR_GOOGLE_BARD_API_KEY")
 
 # ------------------------ FUNCTION TO GET CHATBOT RESPONSE ------------------------
 def get_chatterbot_response(user_response):
