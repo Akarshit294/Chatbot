@@ -104,14 +104,18 @@
             var userText = $('#textInput').val();
             // userText = "User: " + userText;
             // this var will contain user input.
+            
             var userHtml = "<p class='userText'><span>"+"User: "+userText+"</span></p>";
             // this var will display what user just sent.
+            
             $('#textInput').val("");
             // this will empty the userInput box
+            
             $('#chatBox').append(userHtml);
             
             document.getElementById("userInput").scrollIntoView({block:'start', behavior:'smooth'});
             // this will scroll the page after user inputs text.
+            
             $.get("/get",{userMessage: userText}).done(function(data){
                 var botHtml = "<p class='botText'><span>"+data+"</span></p>"
                 $('#chatBox').append(botHtml);
